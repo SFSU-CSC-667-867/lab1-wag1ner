@@ -17,3 +17,14 @@ arrow('hi')
 // make an arrow function with no block body
 
 // make a function that returns a function
+const myArrow = (y) => y =1;
+{
+  return y +1;
+}
+
+console .log(myArrow(8));
+const functionFactory = ()  => () => console.log('This is wierd');
+const a = functionFactory()();
+a();
+const anotherFunction = functionFactory;
+anotherFunction()();
